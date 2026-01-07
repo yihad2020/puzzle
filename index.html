@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.min.css" integrity="sha512-cyIcYOviYhF0bHIhzXWJQ/7xnaBuIIOecYoPZBgJHQKFPo+TOBA+BY1EnTpmM8yKDU4ZdI3UGccNGCEUdfbBqw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.all.min.js" integrity="sha512-IZ95TbsPTDl3eT5GwqTJH/14xZ2feLEGJRbII6bRKtE/HC6x3N4cHye7yyikadgAsuiddCY2+6gMntpVHL1gHw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rompecabezas</title>
+</head>
+<body>
+
+<div class="rompecabezas">
+<div class="columna">
+	<div class="placeholder">
+<div class="puzzle piece1" id="p1" draggable="true" ondragstart="drag(event)" data-value="11"></div>
+<div class="puzzle piece2" id="p2" draggable="true" ondragstart="drag(event)"></div>
+<div class="puzzle piece3" id="p3" draggable="true" ondragstart="drag(event)"></div>
+<div class="puzzle piece4" id="p4" draggable="true" ondragstart="drag(event)"></div>
+<div class="puzzle piece5" id="p5" draggable="true" ondragstart="drag(event)"></div>
+<div class="puzzle piece6" id="p6" draggable="true" ondragstart="drag(event)"></div>
+<div class="puzzle piece7" id="p7" draggable="true" ondragstart="drag(event)"></div>
+<div class="puzzle piece8" id="p8" draggable="true" ondragstart="drag(event)"></div>
+<div class="puzzle piece9" id="p9" draggable="true" ondragstart="drag(event)"></div>
+<div class="puzzle piece10" id="p10" draggable="true" ondragstart="drag(event)"></div>
+<div class="puzzle piece11" id="p11" draggable="true" ondragstart="drag(event)"></div>
+<div class="puzzle piece12" id="p12" draggable="true" ondragstart="drag(event)"></div>
+<div class="puzzle piece13" id="p13" draggable="true" ondragstart="drag(event)"></div>
+<div class="puzzle piece14" id="p14" draggable="true" ondragstart="drag(event)"></div>
+<div class="puzzle piece15" id="p15" draggable="true" ondragstart="drag(event)"></div>
+<div class="puzzle piece16" id="p16" draggable="true" ondragstart="drag(event)"></div>
+<div class="puzzle piece17" id="p17" draggable="true" ondragstart="drag(event)"></div>
+<div class="puzzle piece18" id="p18" draggable="true" ondragstart="drag(event)"></div>
+<div class="puzzle piece19" id="p19" draggable="true" ondragstart="drag(event)"></div>
+<div class="puzzle piece20" id="p20" draggable="true" ondragstart="drag(event)"></div>
+<div class="puzzle piece21" id="p21" draggable="true" ondragstart="drag(event)"></div>
+<div class="puzzle piece22" id="p22" draggable="true" ondragstart="drag(event)"></div>
+<div class="puzzle piece23" id="p23" draggable="true" ondragstart="drag(event)"></div>
+<div class="puzzle piece24" id="p24" draggable="true" ondragstart="drag(event)"></div>
+<div class="puzzle piece25" id="p25" draggable="true" ondragstart="drag(event)"></div>
+</div>
+</div>
+
+<div class="columna">
+	<div class="area"> 
+		 <div class="cuadro" id="c1" ondrop="drop(event)" ondragover="allowDrop(event)" data-value="11"> </div>
+		 <div class="cuadro" id="c2" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		 <div class="cuadro" id="c3" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		 <div class="cuadro" id="c4" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		 <div class="cuadro" id="c5" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		 <div class="cuadro" id="c6" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		 <div class="cuadro" id="c7" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		 <div class="cuadro" id="c8" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		 <div class="cuadro" id="c9" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		 <div class="cuadro" id="c10" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		 <div class="cuadro" id="c11" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		 <div class="cuadro" id="c12" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		 <div class="cuadro" id="c13" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		 <div class="cuadro" id="c14" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		 <div class="cuadro" id="c15" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		 <div class="cuadro" id="c16" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		 <div class="cuadro" id="c17" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		 <div class="cuadro" id="c18" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		 <div class="cuadro" id="c19" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		 <div class="cuadro" id="c20" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		 <div class="cuadro" id="c21" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		 <div class="cuadro" id="c22" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		 <div class="cuadro" id="c23" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		 <div class="cuadro" id="c24" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		 <div class="cuadro" id="c25" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+	</div>
+</div>
+</div>
+
+<div class="audio" >
+	<button id="reproducir" onclick="reproducir();"><i class="fa-solid fa-volume-high"></i></button>
+	<button id="reproducir2" onclick="mute();"><i class="fa-solid fa-volume-xmark"></i></button>
+</div>
+
+<audio src="sounds/sound1.mp3" type="audio/mpeg" id="cancion1"></audio>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+	$(".placeholder").append($(".placeholder .puzzle").sort(function () {
+    return Math.random() - 0.5;
+}));
+</script>
+<script src="function.js"></script>
+</body>
+</html>
